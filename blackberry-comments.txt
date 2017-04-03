@@ -1,0 +1,27 @@
+1. Multiple input: Allow the user the select several files to upload at the same time from the File Picker
+2. A list of files ready to be used from an input element
+3. Make sure these files are actually images.
+4. Get all forms, among them find the form named "photo"
+5. 
+6. Copy the pixels of a source image onto the canvas, scaling and rotating the pixels of the image as necessary.
+    img = the source image from which pixels are to be copied
+    0,0 = the coordinates on the canvas where the image is to be drawn
+        0,0 means "start drawing the image from its top LEFT corner"
+
+7. Get the files uploaded
+8. Get file #1
+9. Create an image element
+10. Create a FileReader
+11. once loaded into file reader ...
+12. get the image encoded as a string
+13. Get the "drawing context" object, Get a 2D drawing context
+14. If the old image is low and wide
+15. If the old image is tall and narrow
+16. Get the content of the canvas bitmap as a PNG image encoded as a string using a data: URL.
+    it can be used with an <img> or transmitted across the network.
+    "image/png" is the (default) MIME type of the image format to use.
+17. // var canvas = $("<canvas>", {"id":"testing"})[0];
+18. To render the original image
+19. cw = canvas width
+20. ch = canvas height
+21. Create a canvas
