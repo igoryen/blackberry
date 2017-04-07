@@ -6,7 +6,7 @@
 
 // BB.aa = (function () {
 
-    function handleFiles() {
+    function handleFiles(maxWidth, maxHeight) {
 
         var filesToUpload = document.getElementById('input').files; // 7
         // console.log("number of files to upload: " + filesToUpload.length);
@@ -28,8 +28,8 @@
             var canvas = document.createElement("canvas"); // 21
             // 17
 
-            var MAX_WIDTH = 400;
-            var MAX_HEIGHT = 300;
+            var MAX_WIDTH = maxWidth;
+            var MAX_HEIGHT = maxHeight;
 
             var cw = oi.width; // 19
             var ch = oi.height; // 20
@@ -70,6 +70,7 @@
             // document.getElementById('image').src = dataurl;     
         }
         // Load files into file reader
+        console.log(file);
         fr.readAsDataURL(file);
     }
 
